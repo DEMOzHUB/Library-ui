@@ -10,18 +10,18 @@ local PlayerMouse = Player:GetMouse()
 
 local redzlib = {
 	Themes = {
-		Darker = {
-			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(25, 25, 25)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(25, 25, 25))
-			}),
-			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
-			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
-			["Color Theme"] = Color3.fromRGB(88, 101, 242),
-			["Color Text"] = Color3.fromRGB(243, 243, 243),
-			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
-		},
+        Darker = {
+       	["Color Hub 1"] = ColorSequence.new({
+		       ColorSequenceKeypoint.new(0.00, Color3.fromRGB(15, 25, 55)),  -- azul bem escuro
+	       	ColorSequenceKeypoint.new(0.50, Color3.fromRGB(25, 45, 95)),  -- azul médio (centro)
+	       	ColorSequenceKeypoint.new(1.00, Color3.fromRGB(15, 25, 55))   -- azul bem escuro
+        	}),
+        	["Color Hub 2"] = Color3.fromRGB(18, 32, 70),   -- fundo secundário
+        	["Color Stroke"] = Color3.fromRGB(40, 80, 150), -- bordas azuladas
+        	["Color Theme"] = Color3.fromRGB(90, 120, 255), -- azul neon (botões/toggles)
+        	["Color Text"] = Color3.fromRGB(235, 240, 255), -- texto principal
+        	["Color Dark Text"] = Color3.fromRGB(170, 185, 220) -- texto secundário
+        },
 		Dark = {
 			["Color Hub 1"] = ColorSequence.new({
 				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)),
@@ -1204,7 +1204,7 @@ end
 
 AddEle("Corner", function(parent, CornerRadius)
 	local New = SetProps(Create("UICorner", parent, {
-		CornerRadius = CornerRadius or UDim.new(0, 7)
+		CornerRadius = CornerRadius or UDim.new(0, 0)
 	}), props)
 	return New
 end)
