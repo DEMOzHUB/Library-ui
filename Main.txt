@@ -28,7 +28,7 @@ local redzlib = {
 				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 0)),
 				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))
 			}),
-			["Color Hub 2"] = Color3.fromRGB(0, 0, 0),
+			["Color Hub 2"] = Color3.fromRGB(28, 28, 28),
 			["Color Stroke"] = Color3.fromRGB(0, 0, 0),
 			["Color Theme"] = Color3.fromRGB(255, 255, 255),
 			["Color Text"] = Color3.fromRGB(255, 255, 255),
@@ -1087,7 +1087,7 @@ local ScreenGui = Create("ScreenGui", CoreGui, {
     })
 })
 local ClickSound = Instance.new("Sound", ScreenGui)
-ClickSound.SoundId = "rbxassetid://535716488"
+ClickSound.SoundId = ""
 ClickSound.Volume = 0.5
 
 local function PlaySound()
@@ -2864,3 +2864,4 @@ function redzlib:MakeWindow(Configs)
 end
 
 return redzlib
+
