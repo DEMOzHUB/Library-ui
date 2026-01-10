@@ -2541,7 +2541,7 @@ function redzlib:MakeWindow(Configs)
             return Tab:AddDropdown({
                 Name = "Select UI Size",
                 Options = {"Small", "Medium", "Large"},
-                Default = "Large",
+                Default = "Medium",
                 Callback = function(Value)
                     if Value == "Small" then
                         MainFrame.Size = UDim2.fromOffset(450, 300)
@@ -2864,6 +2864,7 @@ function redzlib:MakeWindow(Configs)
 end
 
 return redzlib
+
 
 
 
