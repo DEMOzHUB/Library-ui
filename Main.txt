@@ -31,7 +31,6 @@ local redzlib = {
 			["Color Hub 2"] = Color3.fromRGB(85, 55, 125),
 			["Color Stroke"] = Color3.fromRGB(200, 170, 255),
 			["Color Theme"] = Color3.fromRGB(220, 200, 255),
-			["Color Toggle"] = Color3.fromRGB(0, 0, 0),
 			["Color Text"] = Color3.fromRGB(255, 255, 255),
 			["Color Dark Text"] = Color3.fromRGB(210, 190, 240)
 		},
@@ -2865,3 +2864,4 @@ function redzlib:MakeWindow(Configs)
 end
 
 return redzlib
+
