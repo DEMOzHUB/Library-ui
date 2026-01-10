@@ -1440,7 +1440,7 @@ function redzlib:MakeWindow(Configs)
         Size = UDim2.new(1, 0, 1, 0),
         Position = UDim2.new(0, 0, 0, 0),
         BackgroundTransparency = 1,
-        Image = "rbxassetid://124007371528134", 
+        Image = "rbxassetid://117849495772448", 
         ImageTransparency = 0.2,
         ScaleType = Enum.ScaleType.Crop,
         ZIndex = 0
@@ -1718,7 +1718,7 @@ function redzlib:MakeWindow(Configs)
     local Window, FirstTab = {}, false
     function Window:CloseBtn()
         local Dialog = Window:Dialog({
-            Title = "DEMOZ HUB",  
+            Title = "SKY HUB",  
             Text = "Are you sure you want to close?", 
             Options = {
                 {"Yes", function()  
@@ -2864,5 +2864,6 @@ function redzlib:MakeWindow(Configs)
 end
 
 return redzlib
+
 
 
